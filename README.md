@@ -10,9 +10,9 @@ React workshop
 	> npx create-react-app demo
 
 ### Adding Sass stylesheet, react router, redux and saga
-    > npm install node-sass react-router-dom react-router redux react-redux redux-saga redux-thunk jwt-decode --save
-    > npm install redux-devtools-extension --save-dev
-    > npm install @material-ui/core @material-ui/icons
+    > npm i node-sass react-router-dom react-router redux react-redux redux-saga redux-thunk jwt-decode formik yup --save
+    > npm i redux-devtools-extension --save-dev
+    > npm i @material-ui/core @material-ui/icons
 
 #### Commands
     > npm start
@@ -28,3 +28,5 @@ React workshop
 
 [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+#### Annet
+chrome://flags/#allow-insecure-localhost
