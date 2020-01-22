@@ -1,5 +1,11 @@
 # Dokumentasjon #
-iboks - react responsiv webapplication
+React workshop
+* React
+* Redux
+* Formik
+* Yup
+* Saga
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Installering og oppsett
