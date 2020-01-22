@@ -20,8 +20,8 @@ React workshop
     > npm run build
 
 #### Nyttige lenker
-    > [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
-    > [https://create-react-app.dev/docs/adding-a-sass-stylesheet](https://create-react-app.dev/docs/adding-a-sass-stylesheet)
-    > [https://facebook.github.io/create-react-app/docs/running-tests(https://facebook.github.io/create-react-app/docs/running-tests)
-    > [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
+[https://create-react-app.dev/docs/adding-a-sass-stylesheet](https://create-react-app.dev/docs/adding-a-sass-stylesheet)
+[https://facebook.github.io/create-react-app/docs/running-tests(https://facebook.github.io/create-react-app/docs/running-tests)
+[https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
