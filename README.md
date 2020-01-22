@@ -29,3 +29,5 @@ React workshop
 
 [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+#### Annet
+chrome://flags/#allow-insecure-localhost
