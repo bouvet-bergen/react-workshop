@@ -1,23 +1,18 @@
 # Dokumentasjon #
 React workshop
-* React
+* React [Create React App](https://github.com/facebook/create-react-app)
 * Redux
 * Formik
 * Yup
 * Saga
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Installering og oppsett
 	> npx create-react-app iboks
 
 ### Adding Sass stylesheet, react router, redux and saga
-    > npm install node-sass --save
-    > npm install react-router-dom react-router --save
-    > npm install redux react-redux redux-saga redux-thunk --save
-    > npm install jwt-decode --save
-    > npm install @material-ui/core @material-ui/icons
+    > npm install node-sass react-router-dom react-router redux react-redux redux-saga redux-thunk jwt-decode --save
     > npm install redux-devtools-extension --save-dev
+    > npm install @material-ui/core @material-ui/icons
 
 Open [https://create-react-app.dev/docs/adding-a-sass-stylesheet](https://create-react-app.dev/docs/adding-a-sass-stylesheet) to view it in the browser.
 
