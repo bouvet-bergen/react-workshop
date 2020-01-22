@@ -21,7 +21,10 @@ React workshop
 
 #### Nyttige lenker
 [Create React App](https://github.com/facebook/create-react-app)
+
 [Sass](https://create-react-app.dev/docs/adding-a-sass-stylesheet)
-[running-tests](https://facebook.github.io/create-react-app/docs/running-tests)
+
+[Testing](https://facebook.github.io/create-react-app/docs/running-tests)
+
 [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
