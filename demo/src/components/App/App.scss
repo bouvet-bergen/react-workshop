@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.task-container {
+  width: 50%;
+  margin: 0 auto;
+  .task-list {
+    text-align: left;  
+  }
+}
