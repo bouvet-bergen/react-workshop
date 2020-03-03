@@ -6,7 +6,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-import { getTasks } from './../../actions/';
+import { getTasks, getTasksWithoutSaga } from './../../actions/';
 import { getAllTasks } from './../../api/Tasks';
 import './App.scss';
 
@@ -19,23 +19,16 @@ class App extends Component {
 
   doFetchTasks() {
 
-    let data = {
-      tasks: [],
-      fetching: true,
-      error: null
-    };
-
-    this.props.fetchTasks(data);
-
     getAllTasks().then((tasks) => {
-      data = {
+      let data = {
         tasks: tasks,
-        fetching: false,
         error: null
       };
-
-      this.props.fetchTasks(data);
+      this.props.fetchTasksWithoutSaga(data);
     });
+
+
+    // this.props.fetchTasks();    
   }
 
   render() {
@@ -70,7 +63,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchTasks: (data) => dispatch(getTasks(data))
+    fetchTasks: () => dispatch(getTasks()),
+    fetchTasksWithoutSaga: (data) => dispatch(getTasksWithoutSaga(data))
   };
 }
 
@@ -79,7 +73,8 @@ App.propTypes = {
   data: PropTypes.object.isRequired,
 
   // Functions
-  fetchTasks: PropTypes.func.isRequired
+  fetchTasks: PropTypes.func.isRequired,
+  fetchTasksWithoutSaga: PropTypes.func.isRequired
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

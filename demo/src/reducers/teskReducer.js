@@ -8,10 +8,10 @@ const initialState = {
 
 export default function taskReducer(state = initialState, action) {
     switch (action.type) {
-        // Get tasks
         case actionTypes.tasks.GET_TASKS:
-            return { ...state, fetching: action.payload.fetching, error: action.payload.error, tasks: action.payload.tasks };
-        // Return default
+            return { ...state, fetching: true, error: null, tasks: [] };
+        case actionTypes.tasks.GET_TASKS_FAIL_OR_SUCCESS:
+            return { ...state, fetching: false, error: action.payload.error, tasks: action.payload.tasks };
         default:
             return state;
     }
