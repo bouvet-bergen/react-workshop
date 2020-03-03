@@ -1,12 +1,17 @@
 import { actionTypes } from './../common/actionTypes';
 
-export function getTasks(data) {
+
+export function getTasks() {
     return {
         type: actionTypes.tasks.GET_TASKS,
-        payload: {
-            tasks: data.tasks,
-            fetching: data.fetching,
-            error: data.error
-        }
+        payload: null
     };
 }
+
+export function getTasksWithoutSaga(data) {
+    return {
+        type: actionTypes.tasks.GET_TASKS_FAIL_OR_SUCCESS,
+        payload: data
+    };
+}
+

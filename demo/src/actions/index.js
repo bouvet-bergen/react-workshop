@@ -1,1 +1,1 @@
-export { getTasks } from './taskActions';
+export { getTasks, getTasksWithoutSaga } from './taskActions';

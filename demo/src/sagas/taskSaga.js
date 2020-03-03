@@ -4,35 +4,25 @@ import { actionTypes } from './../common/actionTypes';
 
 export function* resolveTasks() {
 
-    let payload = {
-        tasks: [],
-        fetching: true,
-        error: null
-    };
-
-    try {       
-
-        yield put({
-            type: actionTypes.tasks.GET_TASKS,
-            payload: payload
-        });
-
-        payload.tasks = yield call(getAllTasks);
-        payload.fetching = false;
+    try {  
+        const tasks = yield call(getAllTasks);
 
        yield put({
-            type: actionTypes.tasks.GET_TASKS,
-            payload: payload
+            type: actionTypes.tasks.GET_TASKS_FAIL_OR_SUCCESS,
+            payload: {
+                tasks,
+                error: null
+            }
         });
 
-    } catch (error) {
-        payload.tasks = [];
-        payload.fetching = false;
-        payload.error = error;
+    } catch (error) {       
 
         yield put({
-            type: actionTypes.tasks.GET_TASKS,
-            payload: payload
+            type: actionTypes.tasks.GET_TASKS_FAIL_OR_SUCCESS,
+            payload: {
+                tasks: [],
+                error: error
+            }
         });
     }
 }
