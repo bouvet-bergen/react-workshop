@@ -19,16 +19,16 @@ class App extends Component {
 
   doFetchTasks() {
 
-    getAllTasks().then((tasks) => {
-      let data = {
-        tasks: tasks,
-        error: null
-      };
-      this.props.fetchTasksWithoutSaga(data);
-    });
+    // getAllTasks().then((tasks) => {
+    //   let data = {
+    //     tasks: tasks,
+    //     error: null
+    //   };
+    //   this.props.fetchTasksWithoutSaga(data);
+    // });
 
 
-    // this.props.fetchTasks();    
+    this.props.fetchTasks(); 
   }
 
   render() {
@@ -42,7 +42,7 @@ class App extends Component {
           {this.props.data?.tasks &&
             <List component="nav" aria-label="tasks" className='task-list'>
               {this.props.data.tasks.map((item, key) =>
-                <ListItem>
+                <ListItem key={key}>
                   <ListItemText key={item.id}>{item.id} - {item.name} - {item.description}</ListItemText>
                 </ListItem>
               )}
